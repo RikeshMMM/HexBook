@@ -1,3 +1,10 @@
 <% include partials/header %>
 <h1>This is the contacts page</h1>
+<% users.forEach(function(user) { %>
+    <div class="contact">
+        <h2><%= user.name %></h2>
+        <h3><%= user.numDec %></h3>
+        <h3><%= user.numHex %></h3>
+    </div>
+<% }); %>
 <% include partials/footer %>
